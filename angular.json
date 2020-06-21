@@ -60,6 +60,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.staging.ts"
+                }
+              ]
             }
           }
         },
@@ -71,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "yourAngularApp:build:production"
+            },
+            "staging": {
+              "browserTarget": "yourAngularApp:build:staging"
             }
           }
         },
@@ -123,6 +134,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "yourAngularApp"
 }
